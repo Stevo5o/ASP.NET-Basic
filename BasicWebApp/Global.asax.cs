@@ -24,6 +24,12 @@ namespace BasicWebApp
         {
             string myString = "Lets's debug!";
             myString = myString.ToUpper();
+            string userIP = getUserIP();
+        }
+
+        private string getUserIP()
+        {
+            return Request.UserHostAddress;
         }
 
         protected void Application_AuthenticateRequest(object sender, EventArgs e)
