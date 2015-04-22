@@ -2,8 +2,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Basic Web App</title>
+    <link href="styley.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>This is a basic web app</h1>
+    <h1>This is a basic web application</h1>
+    <p>If you click on me, I will disapper</p>
+    <p>Click away!</p>
+    <p>Click me too!</p>
+
+    <script src="Scripts/jquery-2.1.3.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("p").click(function () {
+                $(this).hide();
+            });
+        });
+    </script>
 </body>
 </html>

@@ -22,7 +22,8 @@ namespace BasicWebApp
 
         protected void Application_BeginRequest(object sender, EventArgs e)
         {
-
+            string myString = "Lets's debug!";
+            myString = myString.ToUpper();
         }
 
         protected void Application_AuthenticateRequest(object sender, EventArgs e)
